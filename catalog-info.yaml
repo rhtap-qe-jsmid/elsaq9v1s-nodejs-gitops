@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: elsaq9v1s-nodejs-gitops
+  description: This is GitOps manifest for elsaq9v1s-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=elsaq9v1s-nodejs
+    backstage.io/kubernetes-id: elsaq9v1s-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    github.com/project-slug: rhtap-qe-jsmid/elsaq9v1s-nodejs-gitops
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:elsaq9v1s-nodejs

@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: elsaq9v1s-nodejs-gitops-repository
+spec:
+  url: https://github.com/rhtap-qe-jsmid/elsaq9v1s-nodejs-gitops
